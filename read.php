@@ -55,4 +55,18 @@ $qry =$conn->query($sql);
     </tr>
     <?php } ?>
 </table>
+<!--delete data-->
+<?php 
+    if (isset($_GET['delete'])) {
+        $id = $_GET['id'];
+        $sql ="DELETE FROM `Student` WHERE id='$id' ";
+        $qr = $conn->query($sql);
+        if ($qr) {
+            echo "<div class='alert alert-danger'><strong>Your data has been deleted!!</strong></div>";
+        }else{
+            echo "<div class='alert alert-danger'><strong>Sorry!</strong> there is a problem.  </div>";
+        }
+    }
+ ?>
+
 <button type="button" class="btn btn-success"><a href="index.php">Add Student</a></button>
