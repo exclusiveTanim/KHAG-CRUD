@@ -1,11 +1,12 @@
-<!--?php  include "database.php"; ?-->
+<?php  include "database.php"; 
+include "session.php"; ?>
 <!--?php 
     session_start();
     if (!isset($_SESSION['id'])){
         header("Location: index.php");
     }
  ?>
- <!--?php
+ <--?php
     if(isset($_GET['logout'])){
     session_destroy();
     header("location: index.php");
@@ -48,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand " href="dashboard.php"><strong>Welcome!</strong> &nbsp; <?php echo $_SESSION['fullName'];?></a>
+                    <a class="navbar-brand " href="dashboard.php"><strong>Welcome!</strong> &nbsp; <?php echo $login_session;?></a>
                 </div>
                 <!-- /.navbar-header -->
                 <ul class="nav navbar-top-links navbar-right">
@@ -118,7 +119,7 @@
                     <!-- /.dropdown -->
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> <?php echo$_SESSION["username"];?> <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-user fa-fw"></i> <?php echo $login_session;?> <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <!--                        <li class="divider"></li>-->
@@ -150,7 +151,7 @@
                         <li>
                             
                             <li>
-                                <a href="view-students.php" > <i class="fa fa-users "></i> View Student</a>
+                                <a href="read.php" > <i class="fa fa-users "></i> View Student</a>
                             </li>
                             <li>
                                 <a href="#" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus "></i>  Add Student</a>
