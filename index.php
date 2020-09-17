@@ -74,7 +74,7 @@ include "database.php";
   </div>
   <button type="submit" name="btn" class="btn btn-primary btn-lg btn-block">Login</button>
 </form>
-
 </div>
+<div style="width: 400px; margin: 0 auto; padding: 10px;"><button type="button" name="registration" class="btn btn-primary btn-lg btn-block">Sign Up Now</button></div>
 </body>
 </html>

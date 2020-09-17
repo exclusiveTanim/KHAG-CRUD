@@ -1,3 +1,5 @@
+<?php include "includes/header.php"; 
+?>
 <!-- fetch data for edit  -->
 <?php
    $servername = "localhost";
@@ -59,3 +61,4 @@
 
 </body>
 </html>
+<?php include "includes/footer.php"; ?>

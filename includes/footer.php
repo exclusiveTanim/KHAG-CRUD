@@ -22,10 +22,10 @@
     <script src="assets/dist/js/sb-admin-2.js"></script>
 
 <footer>
-<div class="container-fluid"  >
+<div class="container-fluid" >
     <div class="copyright text-center ">
-        <span class="pull-left">Copyright &copy;idb-bisew</span>
-        <span class="pull-right">Created By:hamid hasan</span>
+        <span class="pull-left">Copyright &copy;Khag-371</span>
+        <span class="pull-right">Created By:Batch 371</span>
     </div>
 
 </div>

@@ -1,3 +1,5 @@
+<?php include "includes/header.php"; 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +18,8 @@
   <input type="text" id="email" name="email"><br>
   <label for="lname">Mobile:</label><br>
   <input type="text" id="mobile" name="mobile" ><br><br>
+  <label for="lname">Password:</label><br>
+  <input type="password" id="pass" name="pass" ><br><br>
   <input type="submit" value="Submit">
 </form> 
 
@@ -23,3 +27,4 @@
 </div>
 </body>
 </html>
+<?php include "includes/footer.php"; ?>

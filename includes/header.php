@@ -5,13 +5,13 @@ include "session.php"; ?>
     if (!isset($_SESSION['id'])){
         header("Location: index.php");
     }
- ?>
- <--?php
+ ?-->
+<?php
     if(isset($_GET['logout'])){
     session_destroy();
     header("location: index.php");
 }
- ?-->
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

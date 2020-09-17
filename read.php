@@ -1,8 +1,10 @@
+<?php include "includes/header.php"; 
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Get Data</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"-->
 </head>
 <body>
 
@@ -69,4 +71,5 @@ $qry =$conn->query($sql);
     }
  ?>
 
-<button type="button" class="btn btn-success"><a href="index.php">Add Student</a></button>
+<button type="button" class="btn btn-success"><a href="add_student.php">Add Student</a></button>
+<?php include "includes/footer.php"; ?>

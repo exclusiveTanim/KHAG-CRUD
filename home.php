@@ -223,3 +223,4 @@
                 <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
+            <?php include "includes/footer.php"; ?>
